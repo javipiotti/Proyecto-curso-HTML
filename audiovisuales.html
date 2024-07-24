@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icons8-clothes-16.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tienda de ropa</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="audiovisuales.html">Audiovisuales</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="content">
+        <h2>Videos demostracion</h2>
+        <hr>
+
+        <div class="video-container">
+            <video class="video-local" src="assets/video/buzos oversize.mp4" controls autoplay muted width="200px"></video>
+            <video class="video-local" src="assets/video/moda buzos.mp4" controls autoplay width="200px"></video>
+            <video class="video-local" src="assets/video/Los mejores buzos oversize.mp4" controls autoplay muted width="200px"></video>
+        </div>
+
+        <h3>Galeria de fotos</h3>
+            <a href="assets/img/_dsc0053-copia-54befd8b9a8b6003fa17195317693115-1024-1024.webp" target="_blank"><img src="assets/img/_dsc0053-copia-54befd8b9a8b6003fa17195317693115-1024-1024.webp" width="180px"></a>
+            <img src="assets/img/buzo1.webp" width="180px">
+            <img src="assets/img/buzo2.webp" width="180px">
+            <img src="assets/img/buzo3.webp" width="180px">
+            <img src="assets/img/campera2.webp" width="180px">
+        <script>
+            // Esta función se llama cuando el documento HTML está completamente cargado
+            document.addEventListener('DOMContentLoaded', function() {
+                var videos = document.querySelectorAll('.video-local');
+                videos.forEach(function(video){
+                    video.volume = 0.2; // Establece el volumen al 20 los tres videos%
+                });     
+            });
+        </script>    
+    </main>
+    
+
+    <footer class="footer">
+        <p>Derechos reservados &copy; 2024</p>
+        <p>Defensa de las y los consumidores. Para reclamos
+            <a href="https://autogestion.produccion.gob.ar/consumidores">ingresá acá.</a> /
+            <a href="contacto.html">Botón de arrepentimiento</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>

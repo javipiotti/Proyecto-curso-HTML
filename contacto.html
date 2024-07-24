@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icons8-clothes-16.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tienda de ropa</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="audiovisuales.html">Audiovisuales</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <main class="content">
+        <h2>Contacto</h2>
+        <hr>
+
+        <div class="contenedor-formulario">
+            <form>
+                <label for="nombre">Nombre</label> <br>
+                <input type="text" id="nombre" placeholder="Ingrese su nombre" required minlength="3">
+                <br>
+                <label for="nombre">Email</label> <br>
+                <input type="email" id="email" placeholder="Ingrese su email" required>
+                <br>
+                <label for="telefono">Telefono</label> <br>
+                <input type="tel" id="telefono" placeholder="ej:+543512715727" required>
+                <br>
+                <label for="pais">Pais</label> <br>
+                <select name="pais" id="pais">
+                    <option value="argentina">Argentina</option>
+                    <option value="chile">Chile</option>
+                    <option value="uruguay">Uruguay</option>
+                    <option value="bolivia">Bolivia</option>
+                    <option value="brasil">Brasil</option>
+                </select>
+                <br>
+                <label for="mensaje">Mensaje</label> <br>
+                <textarea name="mensaje" id="mensaje" cols="10" rows="5" placeholder="Escribi aca tu mensaje"></textarea>
+                <br>
+                <label for="motivo">Motivo de contacto</label> <br>
+                <input type="radio" id="motivo" name="motivo"><i>Consultas</i>
+                <input type="radio" id="motivo" name="motivo"><i>Quejas</i>
+                <input type="radio" id="motivo" name="motivo"><i>Devoluciones</i>
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    
+    </main>
+    
+    <footer class="footer">
+        <p>Derechos reservados &copy; 2024</p>
+        <p>Defensa de las y los consumidores. Para reclamos 
+            <a href="https://autogestion.produccion.gob.ar/consumidores">ingresá acá.</a> / 
+            <a href="contacto.html">Botón de arrepentimiento</a></p>
+    </footer>
+
+</body>
+</html>
